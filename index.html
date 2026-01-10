@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Açaí Delícia - Peça pelo WhatsApp</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,37 +21,138 @@
 </header>
 
 <section class="menu">
-  <h2>Cardápio</h2>
+  <h2>Nossos Produtos</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1709139068234-f83a548f3bec?q=80&w=626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <div class="menu-item-content">
+        <h3>Açaí 300ml</h3>
+        <p>Acompanha 3 complementos grátis</p>
+        <div class="price">R$ 12,00</div>
+        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 300ml', '_blank')">
+          <i class="fab fa-whatsapp"></i> Pedir Agora
+        </button>
+      </div>
+    </div>
 
-  <div class="item">
-    <span>Açaí 300ml</span>
-    <strong>R$ 12,00</strong>
+    <div class="menu-item highlight">
+      <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1583238620415-1e363e11aedf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+      <div class="menu-item-content">
+        <div class="popular-tag">Mais Pedido</div>
+        <h3>Açaí 500ml</h3>
+        <p>Acompanha 4 complementos grátis</p>
+        <div class="price">R$ 18,00</div>
+        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 500ml', '_blank')">
+          <i class="fab fa-whatsapp"></i> Pedir Agora
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80');"></div>
+      <div class="menu-item-content">
+        <h3>Açaí 700ml</h3>
+        <p>Acompanha 5 complementos grátis</p>
+        <div class="price">R$ 24,00</div>
+        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 700ml', '_blank')">
+          <i class="fab fa-whatsapp"></i> Pedir Agora
+        </button>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="item">
-    <span>Açaí 500ml</span>
-    <strong>R$ 18,00</strong>
-  </div>
+<section class="testimonials">
+  <h2>O que nossos clientes dizem</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"O melhor açaí da região! Sempre bem servido e muito saboroso. Recomendo!"</p>
+        <div class="client">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente satisfeito">
+          <span>Ana S.</span>
+        </div>
+      </div>
+    </div>
 
-  <div class="item">
-    <span>Açaí 700ml</span>
-    <strong>R$ 24,00</strong>
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"Entrega super rápida e o açaí vem bem embalado. Já virou tradição em casa!"</p>
+        <div class="client">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente satisfeito">
+          <span>Carlos M.</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="benefits">
   <h2>Por que escolher a Açaí Delícia?</h2>
-  <ul>
-    <li>✔ Ingredientes de qualidade</li>
-    <li>✔ Preparado na hora</li>
-    <li>✔ Atendimento rápido no WhatsApp</li>
-  </ul>
+  <div class="benefits-grid">
+    <div class="benefit">
+      <div class="benefit-icon">
+        <i class="fas fa-leaf"></i>
+      </div>
+      <h3>Ingredientes Naturais</h3>
+      <p>Usamos apenas frutas e ingredientes frescos e selecionados</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">
+        <i class="fas fa-clock"></i>
+      </div>
+      <h3>Preparo na Hora</h3>
+      <p>Seu açaí é preparado no momento do pedido para manter o sabor</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">
+        <i class="fas fa-shipping-fast"></i>
+      </div>
+      <h3>Entrega Rápida</h3>
+      <p>Entregamos em até 40 minutos na região central</p>
+    </div>
+  </div>
 </section>
 
 <section class="info">
-  <h2>Informações</h2>
-  <p>📍 Bairro Centro – RS</p>
-  <p>⏰ Seg a Dom – 13h às 22h</p>
+  <h2>Informações e Contato</h2>
+  <div class="info-grid">
+    <div class="info-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <div>
+        <h3>Endereço</h3>
+        <p>Rua Exemplo, 123 - Centro<br>Porto Alegre/RS</p>
+      </div>
+    </div>
+    <div class="info-item">
+      <i class="fas fa-clock"></i>
+      <div>
+        <h3>Horário de Atendimento</h3>
+        <p>Segunda a Domingo<br>13h às 22h</p>
+      </div>
+    </div>
+    <div class="info-item">
+      <i class="fab fa-instagram"></i>
+      <div>
+        <h3>Instagram</h3>
+        <p><a href="https://www.instagram.com/acai_delicia" target="_blank" style="color: #E1306C; text-decoration: none;">@acai_delicia</a></p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
