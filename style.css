@@ -1,0 +1,98 @@
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #8B008B; /* Roxo escuro para combinar com açaí */
+    --secondary-color: #FF69B4; /* Rosa para contraste */
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+}
+
+body {
+  background: #f6f6f6;
+  color: #333;
+}
+
+.hero {
+  /*background: #6a1b9a;*/
+  background: linear-gradient(135deg, var(--primary-color), #6a0dad);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.menu, .benefits, .info {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.menu h2,
+.benefits h2,
+.info h2 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.benefits ul {
+  list-style: none;
+}
+
+.benefits li {
+  margin-bottom: 8px;
+}
+
+footer {
+  height: 80px;
+}
+
+.btn-whatsapp.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

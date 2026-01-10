@@ -6,8 +6,6 @@ Uma landing page moderna e responsiva para uma empresa de entrega de açaí, des
 
 - Design responsivo que funciona em todos os dispositivos
 - Botão de WhatsApp para contato direto
-- Mapa do Google Maps integrado
-- Animações suaves e efeitos visuais
 - Código limpo e bem organizado
 
 ## Como usar
@@ -19,7 +17,6 @@ Uma landing page moderna e responsiva para uma empresa de entrega de açaí, des
 ## Personalização
 
 - **WhatsApp**: Atualize o número de telefone no link do botão no arquivo `index.html`
-- **Localização**: Atualize o iframe do Google Maps no arquivo `index.html`
 - **Cores**: Personalize as cores no arquivo `styles.css` (variáveis CSS no início do arquivo)
 
 ## Requisitos
