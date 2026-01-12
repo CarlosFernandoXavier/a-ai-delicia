@@ -44,7 +44,7 @@
         <h3>Açaí 300ml</h3>
         <p>Acompanha 3 complementos grátis</p>
         <div class="price">R$ 12,00</div>
-        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 300ml', '_blank')">
+        <button class="btn-whatsapp btn-pedir" data-product="Açaí 300ml">
           <i class="fab fa-whatsapp"></i> Pedir Agora
         </button>
       </div>
@@ -57,7 +57,7 @@
         <h3>Açaí 500ml</h3>
         <p>Acompanha 4 complementos grátis</p>
         <div class="price">R$ 18,00</div>
-        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 500ml', '_blank')">
+        <button class="btn-whatsapp btn-pedir" data-product="Açaí 500ml" data-max-complementos="4">
           <i class="fab fa-whatsapp"></i> Pedir Agora
         </button>
       </div>
@@ -69,7 +69,7 @@
         <h3>Açaí 700ml</h3>
         <p>Acompanha 5 complementos grátis</p>
         <div class="price">R$ 24,00</div>
-        <button class="btn-whatsapp" onclick="window.open('https://wa.me/5551999999999?text=Olá! Gostaria de pedir um Açaí 700ml', '_blank')">
+        <button class="btn-whatsapp btn-pedir" data-product="Açaí 700ml" data-max-complementos="5">
           <i class="fab fa-whatsapp"></i> Pedir Agora
         </button>
       </div>
@@ -226,6 +226,40 @@
     Pedir agora
   </a>
 </footer>
+
+<!-- Modal de Complementos -->
+<div id="complementosModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Escolha até 3 complementos:</h3>
+    <div class="complementos-list">
+      <label class="complemento-item">
+        <input type="checkbox" name="complemento" value="Banana">
+        <span>Banana</span>
+      </label>
+      <label class="complemento-item">
+        <input type="checkbox" name="complemento" value="Granola">
+        <span>Granola</span>
+      </label>
+      <label class="complemento-item">
+        <input type="checkbox" name="complemento" value="Leite condensado">
+        <span>Leite condensado</span>
+      </label>
+      <label class="complemento-item">
+        <input type="checkbox" name="complemento" value="Paçoca">
+        <span>Paçoca</span>
+      </label>
+      <label class="complemento-item">
+        <input type="checkbox" name="complemento" value="Morango">
+        <span>Morango</span>
+      </label>
+    </div>
+    <p class="max-complementos">Máximo de 3 complementos selecionados</p>
+    <button id="confirmarPedido" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Confirmar Pedido
+    </button>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
