@@ -524,6 +524,125 @@ section {
   margin: 0 auto;
 }
 
+/* Seção de Entrega */
+.delivery {
+  background-color: var(--light-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.delivery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.delivery .section-header {
+  margin-bottom: 3rem;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.delivery-step {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.delivery-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step-number::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.delivery-step i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.delivery-step h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.delivery-step p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.delivery-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Seção de Informações */
 .info-item {
   background: var(--light-bg);
   padding: 2rem;
