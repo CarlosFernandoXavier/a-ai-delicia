@@ -577,15 +577,7 @@ section {
   overflow: hidden;
 }
 
-.delivery::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-}
+/* Linha decorativa removida para manter consistência */
 
 .delivery .section-header {
   margin-bottom: 3rem;
@@ -665,7 +657,7 @@ section {
 }
 
 .delivery-step h3 {
-  color: var(--primary-dark);
+  color: var(--primary-color);
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
@@ -743,6 +735,7 @@ section {
   display: block;
   text-align: center;
   width: 100%;
+  font-size: 2.5rem;
 }
 
 .section-header h2::after {
