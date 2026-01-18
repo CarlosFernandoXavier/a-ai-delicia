@@ -1,11 +1,8 @@
 // Função para enviar pedido direto pelo WhatsApp
 function sendOrderDirectly(productName, maxComplementos) {
-  let message = `Olá! Gostaria de pedir um ${productName}`;
+  let message = `Olá! Gostaria de pedir um ${productName}. Pode me dizer os complementos disponíveis para eu escolher?`;
   
-  // Adiciona informação sobre complementos
-  if (maxComplementos > 0) {
-    message += ` com ${maxComplementos} complementos à escolher.`;
-  }
+ 
   
   // Codifica a mensagem para URL
   const encodedMessage = encodeURIComponent(message);
